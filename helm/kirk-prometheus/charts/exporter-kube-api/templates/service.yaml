@@ -17,5 +17,6 @@ spec:
       protocol: TCP
       targetPort: 443
   selector:
-    k8s-app: kube-apiserver
+    component: kube-apiserver
+    tier: control-plane
   type: ClusterIP

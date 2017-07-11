@@ -17,6 +17,7 @@ spec:
       protocol: TCP
       targetPort: 10251
   selector:
-    k8s-app: kube-scheduler
+    component: kube-scheduler
+    tier: control-plane
   type: ClusterIP
 

@@ -17,5 +17,6 @@ spec:
       protocol: TCP
       targetPort: 10252
   selector:
-    k8s-app: kube-controller-manager
+    component: kube-controller-manager
+    tier: control-plane
   type: ClusterIP
