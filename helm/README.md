@@ -2,7 +2,10 @@
 
 #### Prerequest install prometheus-operator
 
-helm install opsgoodness/prometheus --name sys --namespace kube-system
+helm repo add opsgoodness http://charts.opsgoodness.com
+helm repo add cloudposse https://charts.cloudposse.com/incubator
+
+helm install opsgoodness/prometheus-operator --name sys --namespace kube-system
 
 #### Install kirk prometheus
 
